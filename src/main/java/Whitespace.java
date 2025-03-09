@@ -17,13 +17,14 @@ public class Whitespace {
 
     private void countBoth(String testdata) {
         int whiteSpaces = 0;
-
+        int nonWhiteSpace =0;
         for(int i = 0 ; i<testdata.length(); i++){
                 char w = testdata.charAt(i);
                 if ( w == ' ' || w == '\t' || w=='\n' || w == '\r') {
                     whiteSpaces++;
-            }
-            System.out.println("White space count it: " + whiteSpaces);
+            }else{nonWhiteSpace++;}
+            System.out.println("White space count it: " + whiteSpaces +'\n'+
+                    "NonWhite space count it: " + nonWhiteSpace);
         }
         // count the number of whitepace chars and non-whitspace chars.
         // need to use a FOR loop.
